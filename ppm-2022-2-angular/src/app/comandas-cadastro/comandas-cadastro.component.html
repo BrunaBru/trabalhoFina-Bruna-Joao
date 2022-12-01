@@ -1,0 +1,46 @@
+<h1 class="mt-3 text-center">Cadastro de comanda</h1>
+<form [formGroup]="comandaForm" (ngSubmit)="onSubmit()" class="col-8 offset-2">
+  
+  <div class="mb-3">
+    <label for="dataAtendimento">Data de dataAtendimento: </label>
+    <input class="form-control" id="publicdataAtendimentoacao" type="date" formControlName="dataAtendimento" />
+  </div>
+
+  <div class="mb-3">
+    <label for="nomeCliente">Nome: </label>
+    <input class="form-control" id="nomeCliente" type="text" formControlName="nomeCliente" />
+  </div>
+
+  <div class="mb-3">
+    <label for="valor">Valor: </label>
+    <input class="form-control" id="valor" type="text" formControlName="valor" />
+  </div>
+
+  <div class="mb-3">
+    <label for="comida">Comida: </label>
+    <input class="form-control" id="comida" type="text" formControlName="comida" />
+  </div>
+
+  <div class="mb-3">
+    <label for="bebida">Bebida: </label>
+    <input class="form-control" id="bebida" type="text" formControlName="bebida" />
+  </div>
+  <div class="mb-3">
+    <label for="sobremesa">Sobremesa: </label>
+    <input class="form-control" id="sobremesa" type="text" formControlName="sobremesa" />
+  </div>
+
+  <div class="mb-3">
+    <label for="funcionarioId">Funcionario: </label>
+    <input class="form-control" id="funcionarioId" type="text" formControlName="funcionarioId" />
+  </div>
+
+  <div class="mt-5 text-center">
+      <button type="submit" [disabled]="!comandaForm.valid" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+        <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z"/>
+      </svg> Cadastrar</button>
+      <button type="reset" class="btn btn-outline-secondary ms-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+        <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+      </svg> Cancelar</button>
+  </div>
+</form>

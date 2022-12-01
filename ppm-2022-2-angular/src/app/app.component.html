@@ -1,0 +1,29 @@
+<nav class="navbar  navbar-expand-lg navbar-light bg-danger ">
+    <div class="container">
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['listagem-funcionario']">Listar Funcionarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['listagem-comanda']">Listar Comandas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['listagem-entrega']">Listar Entregas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['funcionarios-cadastro']">Cadastrar Funcionarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['comandas-cadastro']">Cadastrar Comandas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['entregas-cadastro']">Cadastrar Entregas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

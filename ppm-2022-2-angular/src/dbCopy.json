@@ -1,0 +1,36 @@
+{
+  "funcionarios": [
+    {
+      "id": 1,
+      "nome": "O cozinheiro",
+      "endereco": "Gonçalves Lêdo-Centro",
+      "cidade" :"Criciuma",
+      "dataAdmissao": "2020-04-03",
+      "cpf": "00099911123",
+      "cargo" :"Cozinheiro"
+    }
+  ],
+  "comandas": [
+    {
+      "id": 1,
+      "dataAtendimento": "2020-04-03",
+      "nomeCliente" : "Cliente",
+      "valor" : 12.2,
+      "comida": "Pizza",
+      "bebida": "pepsi",
+      "sobremesa" :"sorvete",
+      "funcionarioId" : 1
+    }
+  ],
+  "entregas": [
+    {
+      "id": 1,
+      "comandaId": 1,
+      "dataPedido": "2020-04-03",
+      "valorPedido" : 12.2,
+      "endereco": "Rua: Gonçalves Lêdo,123",
+      "cidade": "Criciuma",
+      "pago" : true
+    }
+  ]
+}
